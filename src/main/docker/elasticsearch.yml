@@ -1,0 +1,10 @@
+version: '2'
+services:
+    nosteaknobreak-elasticsearch:
+        container_name: nosteaknobreak-elasticsearch
+        image: elasticsearch:2.4.0
+        # volumes:
+        #     - ~/volumes/jhipster/nosteaknobreak/elasticsearch/:/usr/share/elasticsearch/data/
+        ports:
+            - 9200:9200
+            - 9300:9300
